@@ -3,9 +3,9 @@ import java.util.Scanner;
 class Employee {
    String name;
    int age;
-   int phoneNumber;
+   long phoneNumber;
    String address;
-   int salary;
+   long salary;
    public void printSalary(){
            System.out.println(salary);     
    }
@@ -23,7 +23,7 @@ class Officer extends Employee{
                 System.out.println(specialization);
                 
       }   
-       Officer(String a, int b, int c, String d, int e,String f){
+       Officer(String a, int b, long c, String d, long e,String f){
                 name=a;
                 age=b;
                 phoneNumber=c;
@@ -43,7 +43,7 @@ class Manager extends Employee{
                 System.out.println(salary);
                 System.out.println(department);
       }       
-       Manager(String a, int b, int c, String d, int e,String f){
+       Manager(String a, int b, long c, String d, long e,String f){
                 name=a;
                 age=b;
                 phoneNumber=c;
@@ -64,18 +64,18 @@ public class EmployeeInheritance {
         Scanner sc= new Scanner(System.in);
         String ofname= sc.next();
         int ofage= sc.nextInt();
-        int ofphone= sc.nextInt();
+        long ofphone= sc.nextInt();
         String ofad= sc.next();
-        int ofsal= sc.nextInt();
+        long ofsal= sc.nextInt();
         String ofspe= sc.next();
         String maname= sc.next();
         int maage= sc.nextInt();
-        int maphone= sc.nextInt();
+        long maphone= sc.nextInt();
         String maad= sc.next();
-        int masal= sc.nextInt();
+        long masal= sc.nextInt();
         String maspe= sc.next();
-        Officer of=new Officer(ofname,ofage,ofphone,ofad,ofsal,ofspe);
-        Manager ma=new Manager(maname,maage,maphone,maad,masal,maspe);
+        Officer of= new Officer(ofname,ofage,ofphone,ofad,ofsal,ofspe);
+        Manager ma= new Manager(maname,maage,maphone,maad,masal,maspe);
         of.display();
         ma.display();
    }
