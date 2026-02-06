@@ -5,7 +5,7 @@ class Employee {
    int age;
    long phoneNumber;
    String address;
-   long salary;
+   double salary;
    public void printSalary(){
            System.out.println(salary);     
    }
@@ -23,7 +23,7 @@ class Officer extends Employee{
                 System.out.println(specialization);
                 
       }   
-       Officer(String a, int b, long c, String d, long e,String f){
+       Officer(String a, int b, long c, String d, double e,String f){
                 name=a;
                 age=b;
                 phoneNumber=c;
@@ -43,7 +43,7 @@ class Manager extends Employee{
                 System.out.println(salary);
                 System.out.println(department);
       }       
-       Manager(String a, int b, long c, String d, long e,String f){
+       Manager(String a, int b, long c, String d, double e,String f){
                 name=a;
                 age=b;
                 phoneNumber=c;
@@ -66,13 +66,13 @@ public class EmployeeInheritance {
         int ofage= sc.nextInt();
         long ofphone= sc.nextLong();
         String ofad= sc.next();
-        long ofsal= sc.nextLong();
+        Double ofsal= sc.nextDouble();
         String ofspe= sc.next();
         String maname= sc.next();
         int maage= sc.nextInt();
         long maphone= sc.nextLong();
         String maad= sc.next();
-        long masal= sc.nextLong();
+        Double masal= sc.nextDouble();
         String maspe= sc.next();
         Officer of= new Officer(ofname,ofage,ofphone,ofad,ofsal,ofspe);
         Manager ma= new Manager(maname,maage,maphone,maad,masal,maspe);
